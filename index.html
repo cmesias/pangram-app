@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>isPangram</title>
+    <script>
+
+      function isPangram(sentence) {
+        let lowerCased = sentence.toLowerCase();
+
+        for (let char of 'abcdefghijklmnopqrstuvwxyz') {
+          if (!lowerCased.includes(char)) {
+            return false;
+          }
+        }
+
+        return true;
+      }
+
+      console.log( isPangram('The quick brown fox jumps over the lazy dog') );
+
+    </script>
+  </head>
+  <body>
+    <h1>isPangram</h1>
+  </body>
+</html>
